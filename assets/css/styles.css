@@ -118,6 +118,13 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body > * {
+  flex-shrink: 0;
 }
 
 h1, h2, h3, h4 {
@@ -761,6 +768,7 @@ img {
 /*==================== FOOTER ====================*/
 .footer {
   padding-top: 2rem;
+  margin-top: auto;
 }
 
 .footer__container {
